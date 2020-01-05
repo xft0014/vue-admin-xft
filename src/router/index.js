@@ -11,7 +11,9 @@ import { getToken } from '../utils/auth'
 import { Toast } from 'vant'
 import store from '../store'
 // 地址
-import Addresslist from '../views/manager/address/list'
+import AddressList from '../views/manager/address/List'
+import AddressEdit from '../views/manager/address/Edit'
+
 
 Vue.use(VueRouter)
 
@@ -40,17 +42,20 @@ const routes = [
       }
     },
     children:[{
-      path: 'home',
-      component: Home,
-    },{
-      path: 'order',
-      component: Order,
-    },{
-      path: 'user',
-      component: User,
-    },{
-      path: 'address',
-      component: Addresslist,
+        path: 'home',
+        component: Home,
+      },{
+        path: 'order',
+        component: Order,
+      },{
+        path: 'user',
+        component: User,
+      },{
+        path: 'address',
+        component: AddressList,
+      },{
+        path: 'address_edit',
+        component: AddressEdit,
     }]
   },
   {
