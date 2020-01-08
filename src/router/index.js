@@ -13,6 +13,7 @@ import store from '../store'
 // 地址
 import AddressList from '../views/manager/address/List'
 import AddressEdit from '../views/manager/address/Edit'
+import AddressUpdate from '../views/manager/address/Update'
 import OrderConfirm from '../views/manager/order/Confirm'
 
 
@@ -60,7 +61,10 @@ const routes = [
       },{
         path: 'address_edit',
         component: AddressEdit,
-    }]
+    },{
+      path: 'address_update',
+      component: AddressUpdate,
+    }] 
   },
   {
     path: '/login',
